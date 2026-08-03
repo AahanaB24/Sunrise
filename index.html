@@ -1,34 +1,58 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Document</title>
-        <link rel="stylesheet" href="./styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Website</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
+            <h1>Aahana Basappa</h1>
+            <p>Aspiring Computer Engineer | Robotics | AI | Research</p>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+            </nav>
         </header>
         <main>
-            <h1>Cute Vermont Cats</h1>
-            <h2>Why are cats so cute?</h2>
-            <a href="https://en.wikipedia.org/wiki/Cat">Learn more about cute cats</a>
-            <button onclick="ClickHello()">Click me!</button>
-            <div>
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    Hi! My name is Aahana. I enjoy robotics, programming,
+                    artificial intelligence, and building technology that creates
+                    social impact. I'm also the founder of Bridge the Gap Robotics.
+                </p>
+            </section>
+            <section>
+                <h2>My Favorite Projects</h2>
                 <ul>
-                    <li>List item 1</li>
-                    <li>List item 2</li>
-                    <li>List item 3</li>
+                    <li>Bridge the Gap Robotics</li>
+                    <li>Sentinel</li>
+                    <li>ROBOKINE</li>
+                    <li>Machine Learning Research</li>
                 </ul>
-                <ol>
-                    <li>Ordered item 1</li>
-                    <li>Ordered item 2</li>
-                    <li>Ordered item 3</li>
-                </ol>
-            </div>
-            <img src="./imgs/cat.png" alt="A cute cat">
+            </section>
+            <section>
+                <h2>Fun Fact</h2>
+                <button onclick="showFact()">
+                    Show Random Fact
+                </button>
+                <p id="fact"></p>
+            </section>
+            <section>
+                <h2>Favorite Color</h2>
+                <button onclick="changeColor()">
+                    Change Background Color
+                </button>
+            </section>
+            <img src="./imgs/cat.png" width="300" alt="Picture">
         </main>
-        <footer></footer>
+
+        <footer>
+            <p>© 2026 Aahana Basappa</p>
+        </footer>
+        <script src="script.js"></script>
     </body>
-    <script src="./script.js"></script>
 </html>
